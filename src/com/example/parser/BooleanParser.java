@@ -19,7 +19,7 @@
  *************************************************************************************
  * NOTES:
  * 	-This solution attempts to use Edsger W. Dijkstra Shunting Yard Algorithm, however
- *   done so unsuccessfully.
+ *   unsuccessfully.
  *  -This uses two stacks to store the operands and the operators(values in the code)
  *  -The solution only works for simple 2 value test cases. ("FALSE OR TRUE .")
  *  -NOT does not work as expected.
@@ -63,7 +63,8 @@ public class BooleanParser {
 			if(s.equals(".")){
 				//System.out.println("\n end of expression");
 				break;				
-			}else{
+			}
+			else{
 				switch(s){
 				case "(":
 					operators.push(s);
